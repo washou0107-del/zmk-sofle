@@ -122,7 +122,7 @@
 &bt BT_SEL 0  &trans          &kp UP           &trans                            &trans  &trans       &mmv MOVE_DOWN   &kp PG_UP        &trans           &trans        &trans        &kp SQT   &kp HOME
 &bt BT_SEL 1  &kp LEFT        &kp DOWN         &kp RIGHT                         &trans  &trans       &mmv MOVE_LEFT   &kp PG_DN        &trans           &trans        &trans        &kp UP    &kp END
 &kp LCTRL     &trans          &trans           &trans                            &trans  &trans       &mmv MOVE_RIGHT  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &trans        &kp LEFT      &kp DOWN  &kp RIGHT
-&kp C_MUTE    &rgb_ug RGB_ON  &rgb_ug RGB_OFF  &rgb_ug RGB_COLOR_HSB(183,53,49)  &mo 0   &mkp LCLK    &mkp LCLK        &mkp RCLK        &capcha          &kp C_BRI_UP  &kp C_BRI_DN  &trans
+&kp C_MUTE    &rgb_ug RGB_ON  &rgb_ug RGB_OFF  &rgb_ug RGB_COLOR_HSB(183,53,49)  &mo 0   &mkp LCLK    &mkp RCLK        &mkp RCLK        &capcha          &kp C_BRI_UP  &kp C_BRI_DN  &trans
             >;
 
             display-name = "layer1";
