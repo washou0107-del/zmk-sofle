@@ -124,7 +124,7 @@ layers:
   - RGB COLOR HSB(183,53,49)
   - {t: LAYER0, type: held}
   - $$mdi:mouse-left-click-outline$$
-  - $$mdi:mouse-left-click-outline$$
+  - $$mdi:mouse-right-click-outline$$
   - $$mdi:mouse-right-click-outline$$
   - '&capcha'
   - $$mdi:brightness-5$$
