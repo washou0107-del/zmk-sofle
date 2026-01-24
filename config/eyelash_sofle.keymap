@@ -64,6 +64,40 @@
 
             label = "SHIFT_MCLK";
         };
+
+        email: email {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp W &kp A &kp D &kp A &kp PERIOD &kp S &kp H &kp O &kp T &kp A &kp AT_SIGN &kp J &kp P &kp PERIOD &kp F &kp U &kp J &kp I &kp T &kp S &kp U &kp PERIOD &kp C &kp O &kp M>;
+            label = "EMAIL";
+        };
+
+        studentnom: studentnom {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(E) &kp NUMBER_1 &kp A &kp N0 &kp NUMBER_6 &kp NUMBER_1 &kp NUMBER_6 &kp NUMBER_3 &kp MINUS>;
+            label = "STUDENTNOM";
+        };
+
+        capcha: capcha {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_WIN>,
+                <&macro_press>,
+                <&kp LEFT_SHIFT>,
+                <&macro_press>,
+                <&kp S>,
+                <&macro_release>,
+                <&kp LEFT_WIN>,
+                <&macro_release>,
+                <&kp LEFT_SHIFT>,
+                <&macro_release>,
+                <&kp S>;
+
+            label = "CAPCHA";
+        };
     };
 
     keymap {
@@ -75,7 +109,7 @@
 &kp TAB           &kp Q         &kp W         &kp E         &kp R         &kp T           &kp DOWN   &kp Y         &kp U         &kp I         &kp O         &kp P             &kp EQUAL
 &kp LEFT_SHIFT    &kp A         &kp S         &kp D         &kp F         &kp G           &kp LEFT   &kp H         &kp J         &kp K         &kp L         &kp LEFT_BRACKET  &kp RIGHT_BRACKET
 &kp LEFT_CONTROL  &kp Z         &kp X         &kp C         &kp V         &kp B           &kp RIGHT  &kp N         &kp M         &kp COMMA     &kp PERIOD    &kp SLASH         &kp SEMICOLON
-&kp C_MUTE        &kp ESCAPE    &kp LEFT_GUI  &kp LEFT_ALT  &mo 1         &kp SPACE       &mkp LCLK  &kp ENTER     &kp INT_KANA  &kp COMMA     &kp PERIOD    &mo 1
+&kp C_MUTE        &kp ESCAPE    &kp LEFT_GUI  &kp LEFT_ALT  &mo 1         &kp SPACE       &mkp LCLK  &kp ENTER     &kp INT_KANA  &email        &studentnom   &kp DELETE
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -84,11 +118,11 @@
 
         layer_1 {
             bindings = <
-&kp F1      &kp F2           &kp F3          &kp F4           &kp F5           &kp F6             &mmv MOVE_UP     &kp F7           &kp F8           &kp F9      &kp F10    &kp F11           &kp F12
-&trans      &kp GRAVE        &mkp LCLK       &mkp MCLK        &mkp RCLK        &mkp MB4           &mmv MOVE_DOWN   &kp PG_UP        &kp END          &kp UP      &kp HOME   &kp MINUS         &kp EQUAL
-&trans      &kp TILDE        &trans          &trans           &trans           &mkp MB5           &mmv MOVE_LEFT   &kp PG_DN        &kp LEFT         &kp DOWN    &kp RIGHT  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-&trans      &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &rgb_ug RGB_SPI    &mmv MOVE_RIGHT  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp INSERT  &kp F11    &kp F12           &trans
-&kp C_MUTE  &trans           &trans          &trans           &mo 0            &mkp LCLK          &mkp LCLK        &mkp RCLK        &trans           &trans      &trans     &mo 0
+&kp F1        &kp F2          &kp F3           &kp F4                            &kp F5  &kp F6       &mmv MOVE_UP     &kp F7           &kp F8           &kp F9        &kp F10       &kp F11   &kp F12
+&bt BT_SEL 0  &trans          &kp UP           &trans                            &trans  &trans       &mmv MOVE_DOWN   &kp PG_UP        &trans           &trans        &trans        &kp HOME  &kp END
+&bt BT_SEL 1  &kp LEFT        &kp DOWN         &kp RIGHT                         &trans  &trans       &mmv MOVE_LEFT   &kp PG_DN        &trans           &trans        &trans        &kp UP    &trans
+&out OUT_USB  &trans          &trans           &trans                            &trans  &trans       &mmv MOVE_RIGHT  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &trans        &kp LEFT      &kp DOWN  &kp RIGHT
+&kp C_MUTE    &rgb_ug RGB_ON  &rgb_ug RGB_OFF  &rgb_ug RGB_COLOR_HSB(183,53,49)  &mo 0   &mkp LCLK    &mkp LCLK        &mkp RCLK        &capcha          &kp C_BRI_UP  &kp C_BRI_DN  &trans
             >;
 
             display-name = "layer1";
