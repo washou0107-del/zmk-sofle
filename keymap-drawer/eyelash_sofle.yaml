@@ -57,11 +57,11 @@ layers:
   - $$mdi:keyboard-esc$$
   - $$mdi:apple-keyboard-command$$
   - $$mdi:apple-keyboard-option$$
-  - layer1
   - $$mdi:keyboard-space$$
+  - layer1
   - $$mdi:mouse-left-click-outline$$
+  - {t: Alt+`, s: Alt+~}
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - INT KANA
   - '&email'
   - '&studentnom'
   - $$mdi:backspace-reverse-outline$$
@@ -122,8 +122,8 @@ layers:
   - RGB ON
   - RGB OFF
   - RGB COLOR HSB(183,53,49)
-  - {t: LAYER0, type: held}
-  - $$mdi:mouse-left-click-outline$$
+  - LAYER0
+  - {t: '$$mdi:mouse-left-click-outline$$', type: held}
   - $$mdi:mouse-right-click-outline$$
   - $$mdi:mouse-right-click-outline$$
   - '&capcha'
