@@ -59,7 +59,7 @@ layers:
   - $$mdi:apple-keyboard-option$$
   - $$mdi:keyboard-space$$
   - layer1
-  - $$mdi:mouse-left-click-outline$$
+  - $$mdi:mouse-right-click-outline$$
   - {t: Alt+`, s: Alt+~}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - '&email'
@@ -122,8 +122,8 @@ layers:
   - RGB ON
   - RGB OFF
   - RGB COLOR HSB(183,53,49)
-  - LAYER0
-  - {t: '$$mdi:mouse-left-click-outline$$', type: held}
+  - $$mdi:mouse-left-click-outline$$
+  - {t: LAYER0, type: held}
   - $$mdi:mouse-right-click-outline$$
   - $$mdi:mouse-right-click-outline$$
   - '&capcha'
