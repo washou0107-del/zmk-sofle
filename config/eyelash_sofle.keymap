@@ -126,11 +126,11 @@
 
         layer_1 {
             bindings = <
-&kp F1        &kp F1    &kp F2       &kp F3     &kp F4  &kp F5       &mmv MOVE_UP     &kp F6           &kp F7           &kp F8   &kp F9         &kp F10        &kp DEL
-&bt BT_SEL 0  &trans    &kp UP       &trans     &trans  &kp HOME     &mmv MOVE_DOWN   &kp PG_UP        &trans           &trans   &kp F11        &kp F12        &kp GRAVE
-&bt BT_SEL 1  &kp LEFT  &kp DOWN     &kp RIGHT  &trans  &trans       &mmv MOVE_LEFT   &kp PG_DN        &trans           &trans   &trans         &kp UP         &kp NON_US_BACKSLASH
-&kp LCTRL     &trans    &trans       &trans     &trans  &trans       &mmv MOVE_RIGHT  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &trans   &kp LEFT       &kp DOWN       &kp RIGHT
-&kp C_MUTE    &email    &studentnom  &capcha    &mo 0   &mkp LCLK    &mkp RCLK        &mkp RCLK        &kp HOME         &kp END  &kp PAGE_DOWN  &kp PAGE_DOWN
+&kp F1        &kp F1    &kp F2       &kp F3     &kp F4  &kp F5       &mmv MOVE_UP     &kp F6           &kp F7           &kp F8            &kp F9             &kp F10        &kp DEL
+&bt BT_SEL 0  &trans    &kp UP       &trans     &trans  &kp HOME     &mmv MOVE_DOWN   &kp PG_UP        &trans           &trans            &kp F11            &kp F12        &kp TILDE
+&bt BT_SEL 1  &kp LEFT  &kp DOWN     &kp RIGHT  &trans  &trans       &mmv MOVE_LEFT   &kp PG_DN        &trans           &trans            &trans             &kp BSLH       &kp ASTERISK
+&kp LCTRL     &trans    &trans       &trans     &trans  &trans       &mmv MOVE_RIGHT  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp PIPE       &kp GRAVE
+&kp C_MUTE    &email    &studentnom  &capcha    &mo 0   &mkp LCLK    &mkp RCLK        &mkp RCLK        &kp HOME         &kp END           &kp PAGE_DOWN      &kp PAGE_DOWN
             >;
 
             display-name = "layer1";
